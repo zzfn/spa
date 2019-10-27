@@ -13,14 +13,14 @@ const vueOptions = {
     render: h => h(App)
 };
 
-// 判断当前页面使用singleSpa应用
+// singleSpaVue包装一个vue微前端服务对象
 const vueLifecycles = singleSpaVue({
     Vue,
     appOptions: vueOptions
 });
 
-export const bootstrap = vueLifecycles.bootstrap;
-export const mount = vueLifecycles.mount;
-export const unmount = vueLifecycles.unmount;
+export const bootstrap = vueLifecycles.bootstrap; // 启动时
+export const mount = vueLifecycles.mount; // 挂载时
+export const unmount = vueLifecycles.unmount; // 卸载时
 
 export default vueLifecycles;
