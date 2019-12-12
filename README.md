@@ -1,5 +1,7 @@
 # vue-single-spa 
 
+### 有问题欢迎添加私人微信：wer884181317 探讨
+
 **基于vuejs为底座，single-spa 为框架的微前端示例工程**
 
 ## 更新日志
@@ -17,25 +19,25 @@
 
 ## 安装步骤：
 
-1. Vuejs：
+### 1. Vuejs：
     - cd sub-projects/sub-app-vuejs
     - yarn install / npm install / cnpm install
     - npm run serve-vue
-2. React：
+### 2. React：
     - cd sub-projects/sub-app-react16
     - yarn install / npm install / cnpm install
     - npm run build
     - npm run serve-react
-3. Angular：
+### 3. Angular：
     - cd sub-projects/sub-app-angular
     - yarn install / npm install / cnpm install
     - npm run build
     - npm run serve-angular
-4. vue-single-spa-back:
+### 4. vue-single-spa-back:
     - yarn install / npm install / cnpm install
     - npm run serve-spa
     
-## 端口示例：
+## 端口：
 
 - vuejs: 3000
 - react: 3001
