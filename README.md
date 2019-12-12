@@ -1,8 +1,8 @@
 # vue-single-spa 
 
-**有问题欢迎添加私人微信：wer884181317 探讨**
-
 **基于vuejs为底座，single-spa 为框架的微前端示例工程**
+
+![欢迎添加微信探讨](https://images.gitee.com/uploads/images/2019/1212/225746_010d72cb_1957979.jpeg "WechatIMG91.jpeg")
 
 ## 更新日志
 
