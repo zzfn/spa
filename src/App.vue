@@ -3,12 +3,22 @@
     <a-layout-sider :trigger="null" collapsible v-model="collapsed">
       <div class="logo" />
       <a-menu theme="dark" mode="inline">
-        <a-menu-item key="1">
-          <router-link to="vue">
+        <a-sub-menu key="1">
+          <span slot="title">
             <a-icon type="user" />
             <span>Vue</span>
-          </router-link>
-        </a-menu-item>
+          </span>
+          <a-menu-item key="1-1">
+            <a href="/vue#" @click="goToChildRoute">
+              Home
+            </a>
+          </a-menu-item>
+          <a-menu-item key="1-2">
+            <a href="/vue#/about" @click="goToChildRoute">
+              About
+            </a>
+          </a-menu-item>
+        </a-sub-menu>
         <a-menu-item key="2">
           <router-link to="react">
             <a-icon type="video-camera" />
@@ -31,21 +41,27 @@
                 @click="()=> collapsed = !collapsed"
         />
       </a-layout-header>
-      <a-layout-content
-              :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
-      >
+      <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
         <router-view />
       </a-layout-content>
     </a-layout>
   </a-layout>
 </template>
 <script>
+  import { navigateToUrl } from 'single-spa';
   export default {
     data() {
       return {
         collapsed: false,
       };
     },
+    methods: {
+      goToChildRoute(e) {
+        // 官方指定跳转
+        e.preventDefault();
+        navigateToUrl(e);
+      }
+    }
   };
 </script>
 <style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="vue">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -14,8 +14,8 @@
     components: {Home}
   }
 </script>
-<style>
-#app {
+<style scoped>
+#vue {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

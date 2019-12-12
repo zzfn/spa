@@ -18,9 +18,10 @@ const routes = [
     component: () => import('../views/About.vue')
   }
 ]
-
 const router = new VueRouter({
-  base: process.env.BASE_URL,
+  // 子项目设置history，base设置为父项目的一级路由。
+  base: '/vue/',
+  // mode: 'history',
   routes
 })
 
