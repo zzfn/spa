@@ -2,8 +2,6 @@
 
 **基于vuejs为底座，single-spa 为框架的微前端示例工程**
 
-![欢迎添加微信探讨](https://images.gitee.com/uploads/images/2019/1212/225746_010d72cb_1957979.jpeg "WechatIMG91.jpeg")
-
 ## 更新日志
 
 - 2019.12.12: 样式隔离，父项目控制子项目路由跳转
@@ -42,3 +40,7 @@
 - vuejs: 3000
 - react: 3001
 - angular: 3002
+
+## 个人微信
+
+![欢迎添加微信探讨](https://images.gitee.com/uploads/images/2019/1212/225746_010d72cb_1957979.jpeg "WechatIMG91.jpeg")
