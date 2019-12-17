@@ -1,13 +1,8 @@
-<template>
-    <div id="angular-app"></div>
-</template>
-
 <script>
     export default {
-        name: "Angular"
+        name: "Angular",
+        render(h) {
+            return h()
+        }
     }
 </script>
-
-<style scoped>
-
-</style>

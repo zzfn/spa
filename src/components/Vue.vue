@@ -1,15 +1,8 @@
-<template>
-    <div id="single-vue" class="single-spa-vue">
-        <div id="vue"></div>
-    </div>
-</template>
-
 <script>
     export default {
-        name: "Vue"
+        name: "Vue",
+        render(h) {
+            return h()
+        }
     }
 </script>
-
-<style scoped>
-
-</style>

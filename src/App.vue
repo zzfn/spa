@@ -42,7 +42,14 @@
         />
       </a-layout-header>
       <a-layout-content :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }">
-        <router-view />
+        <div>
+          <div id="react-app"></div>
+          <div id="single-vue" class="single-spa-vue">
+            <div id="vue"></div>
+          </div>
+          <div id="angular-app"></div>
+          <router-view :key="$route.path" />
+        </div>
       </a-layout-content>
     </a-layout>
   </a-layout>

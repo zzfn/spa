@@ -1,13 +1,8 @@
-<template>
-    <div id="react-app"></div>
-</template>
-
 <script>
     export default {
-        name: "React"
+        name: "React",
+        render(h) {
+            return h()
+        }
     }
 </script>
-
-<style scoped>
-
-</style>
