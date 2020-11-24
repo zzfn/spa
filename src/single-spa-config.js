@@ -39,7 +39,7 @@ singleSpa.registerApplication( //注册微前端服务
         // 如果这个函数不需要在线引入，只需要本地引入一块加载：
         // () => import('xxx/main.js')
         let singleVue = null;
-        await getManifest('http://127.0.0.1:3000/manifest.json', 'app').then(() => {
+        await getManifest('http://spa.zzfzzf.com/dist/manifest.json', 'app').then(() => {
             singleVue = window.singleVue;
         });
         return singleVue;
