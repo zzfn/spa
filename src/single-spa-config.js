@@ -39,7 +39,7 @@ singleSpa.registerApplication( //注册微前端服务
         // 如果这个函数不需要在线引入，只需要本地引入一块加载：
         // () => import('xxx/main.js')
         let singleVue = null;
-        await getManifest('http://spa.zzfzzf.com/dist/manifest.json', 'app').then(() => {
+        await getManifest('http://vue.zzfzzf.com/manifest.json', 'app').then(() => {
             singleVue = window.singleVue;
         });
         return singleVue;
@@ -50,7 +50,7 @@ singleSpa.registerApplication( //注册微前端服务
 singleSpa.registerApplication(
     'reactApp',
     async () => {
-        await runScript('http://spa.zzfzzf.com/build/static/js/main.js');
+        await runScript('http://react.zzfzzf.com/static/js/main.js');
         return window.reactApp;
     },
     location => location.pathname.startsWith('/react')
