@@ -16,6 +16,7 @@ export class Clock extends Component {
         return (
             <div className={`clock ${clockStateClass}`}>
                 <h1>Welcome to React 16 application!</h1>
+                <h1>欢迎使用React16!</h1>
                 <h2 className='clock__time'>It is {this.state.date.toLocaleTimeString()}</h2>
                 <Button text="Bootstrap 4 Button"/>
             </div>
