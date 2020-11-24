@@ -50,7 +50,7 @@ singleSpa.registerApplication( //注册微前端服务
 singleSpa.registerApplication(
     'reactApp',
     async () => {
-        await runScript('http://localhost:3001/static/js/main.js');
+        await runScript('http://spa.zzfzzf.com/build/static/js/main.js');
         return window.reactApp;
     },
     location => location.pathname.startsWith('/react')
